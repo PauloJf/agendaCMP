@@ -10,6 +10,9 @@
     <content src="index.html" />
     <gap:plugin name="org.apache.cordova.inappbrowser" version="0.1.0" />
     <gap:splash src="splash.png" />
+    <gap:config-file platform="android" parent="/manifest">
+        <application android:debuggable="true" />
+    </gap:config-file>
     <icon src="icon.png" />
     <preference name="orientation" value="landscape" />
     <preference name="target-device" value="universal" />
