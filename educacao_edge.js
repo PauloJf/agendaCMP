@@ -36,7 +36,7 @@ sym.$('outrosText').html('<strong style="color: #007DA0; font-weight: 500;">Ofic
           </style>\
          ').appendTo("head");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${cmpLinkBtn}","click",function(sym,e){window.open("http://www.cm-porto.pt","_blank");});
+Symbol.bindElementAction(compId,symbolName,"${cmpLinkBtn}","click",function(sym,e){window.open("http://www.cm-porto.pt", '_blank', 'closebuttoncaption=Fechar');});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
