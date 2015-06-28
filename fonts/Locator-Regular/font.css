@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Locator';
+  src: url('Locator-Light.eot'); /* IE9 Compat Modes */
+  src: url('Locator-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Locator-Light.woff') format('woff'), /* Modern Browsers */
+       url('Locator-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Locator-Light.svg#5bea650159d623c92e27858b07db4864') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url('Locator-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Locator-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Locator-Regular.woff') format('woff'), /* Modern Browsers */
+       url('Locator-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Locator-Regular.svg#f7ed3d53e639ff386a8af1ca8b89abe9') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url('Locator-Bold.eot'); /* IE9 Compat Modes */
+  src: url('Locator-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Locator-Bold.woff') format('woff'), /* Modern Browsers */
+       url('Locator-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Locator-Bold.svg#c354f5635d43ed4ddd9099cc4ed4f6fd') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url('Locator-Medium.eot'); /* IE9 Compat Modes */
+  src: url('Locator-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Locator-Medium.woff') format('woff'), /* Modern Browsers */
+       url('Locator-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Locator-Medium.svg#137281df31907f81d41be74aaa10068f') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  500;
+}
