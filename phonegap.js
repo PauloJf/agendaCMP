@@ -11,6 +11,7 @@ function onDeviceReady() {
 }
 
 function handleExternalURLs() {
+    alert('handle');
     // Handle click events for all external URLs
     if (device.platform.toUpperCase() === 'ANDROID') {
         $(document).on('click', 'a[href^="http"]', function (e) {
