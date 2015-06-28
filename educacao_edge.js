@@ -34,12 +34,7 @@ sym.$('outrosText').html('<strong style="color: #007DA0; font-weight: 500;">Ofic
                     background: rgba(130,130,130,0.4);\
           }\
           </style>\
-         ').appendTo("head");
-$(document).on('click', 'a', function (event) {
-    event.preventDefault();
-    window.open($(this).attr('href'), '_system');
-    return false;
-});});
+         ').appendTo("head");});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${cmpLinkBtn}","click",function(sym,e){window.open("http://www.cm-porto.pt","_blank");});
 //Edge binding end
