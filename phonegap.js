@@ -11,11 +11,11 @@ function onDeviceReady() {
 }
 
 function handleExternalURLs() {
-    alert('handle');
     // Handle click events for all external URLs
     if (device.platform.toUpperCase() === 'ANDROID') {
         $(document).on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
+            alert($(this).attr('href'));
             navigator.app.loadUrl(url, { openExternal: true });
             e.preventDefault();
         });
