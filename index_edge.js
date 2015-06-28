@@ -1,10 +1,51 @@
 
-(function(compId){var _=null,y=true,n=false,x11='break-word',x12='nowrap',x2='5.0.0',x5='rgba(0,0,0,0)',x1='5.0.1',x34='rgb(0, 0, 0)',x4='both',x10='Locator, Geneva, Verdana, sans-serif',x35='1',x='text',x9='7',m='rect',x13='rgba(255,255,255,0.80)',i='none',x3='5.0.1.386',p='px',o='opacity',d='display',x33='Rectangle',b='block',x20='rgba(255,255,255,1.00)',x26='412px',x23='110px',x24='161px',x29='0px',l='normal',e36='${Rectangle}',x27='auto',x25='676px',x30='900px',x31='600px',x22='bgIndex2',g='image',x21='rgba(255,255,255,1)',xc='rgba(0,0,0,1)',x32='400px';var g16='btnSugestoes.svg',g15='btnActividade.svg',g7='logoCMP.svg',g28='bgIndex.svg',g6='LogoAmbiente.svg',g18='btnContactos.svg',g19='btnJogo.svg',g17='btnDias.svg',g14='btnEducacao.svg';var s8="Design: Atelier João Borges . Developed: GatoSerio.com";var im='images/',aud='media/',vid='media/',js='js/',fonts={'Locator, Geneva, Verdana, sans-serif':'<link rel=\"stylesheet\" type=\"text/css\" href=\"fonts/Locator-Regular/font.css\">'},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=["edge_includes/jquery-2.1.1.min.js","edge_includes/EdgeCommons.js"],symbols={"stage":{v:x1,mv:x2,b:x3,stf:x4,cg:i,rI:n,cn:{dom:[{id:'content',symbolName:'content',t:m,r:['0px','0px','900px','600px','auto','auto']},{id:'LogoAmbiente',t:g,r:['110px','49px','349px','52px','auto','auto'],f:[x5,im+g6,'0px','0px']},{id:'logoCMP',t:g,r:['710px','60px','75px','39px','auto','auto'],f:[x5,im+g7,'0px','0px']},{id:'Copy',t:x,tag:'p',r:['110px','573px','auto','auto','auto','auto'],text:s8,n:[x10,[x9,p],"rgba(111,109,108,1.00)",l,i,"",x11,x12]},{id:'barraTranparenteMenu',t:m,r:['110px','173px','676px','47px','auto','auto'],f:[x13],s:[0,xc,i]},{id:'btnEducacao',t:g,r:['319px','122px','79px','88px','auto','auto'],cl:'rect(0px 79px 88px 16.45703125px)',cu:'pointer',f:[x5,im+g14,'0px','0px']},{id:'btnActividade',t:g,r:['411px','122px','74px','90px','auto','auto'],cl:'rect(0px 74px 90px 11.99609375px)',cu:'pointer',f:[x5,im+g15,'0px','0px']},{id:'btnSugestoes',t:g,r:['496px','122px','76px','90px','auto','auto'],cl:'rect(0px 76px 90px 13.955078125px)',cu:'pointer',f:[x5,im+g16,'0px','0px']},{id:'btnDias',t:g,r:['588px','119px','74px','91px','auto','auto'],cl:'rect(3.0654296875px 74.4755859375px 91px 0.34130859375px)',cu:'pointer',f:[x5,im+g17,'0px','0px']},{id:'btnContactos',t:g,r:['675px','122px','69px','88px','auto','auto'],cl:'rect(0px 69px 88px 6.5322265625px)',cu:'pointer',f:[x5,im+g18,'0px','0px']},{id:'btnJogo',t:g,r:['754px','122px','79px','77px','auto','auto'],cl:'rect(0px 79px 77px 16.6943359375px)',cu:'pointer',f:[x5,im+g19,'0px','0px']},{id:'fader',t:m,r:['1px','0px','900px','600px','auto','auto'],f:[x20],s:[0,"rgb(0, 0, 0)",i]}],style:{'${Stage}':{isStage:true,r:['null','null','900px','600px','auto','auto'],overflow:'hidden',f:[x21]}}},tt:{d:0,a:y,data:[]}},"content":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:y,cn:{dom:[{t:g,id:x22,r:[x23,x24,x25,x26,x27,x27],f:[x5,im+g28,x29,x29]}],style:{'${symbolSelector}':{r:[_,_,x30,x31]}}},tt:{d:0,a:y,data:[]}},"fadeIn":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{t:m,r:[x29,x29,x30,x32,x27,x27],v:b,id:x33,s:[0,x34,i],o:x35,f:[x20]}],style:{'${symbolSelector}':{r:[_,_,x30,x32]}}},tt:{d:500,a:y,data:[["eid12",d,0,0,"easeInOutQuad",e36,b,b],["eid13",d,500,0,"easeInOutQuad",e36,b,i],["eid11",o,0,500,"easeInOutQuad",e36,'1','0']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("CMPAGENDA");
+(function(compId){var _=null,y=true,n=false,x11='break-word',x12='nowrap',x2='5.0.0',x5='rgba(0,0,0,0)',x1='5.0.1',x35='rgb(0, 0, 0)',x4='both',x10='Locator, Geneva, Verdana, sans-serif',x34='1',x='text',x9='7',m='rect',x13='rgba(255,255,255,0.80)',i='none',x25='676px',x3='5.0.1.386',p='px',o='opacity',d='display',x33='Rectangle',b='block',x20='rgba(255,255,255,1.00)',x26='412px',x23='110px',x29='0px',l='normal',e36='${Rectangle}',x27='auto',x24='161px',x30='900px',x31='600px',x22='bgIndex2',g='image',x21='rgba(255,255,255,1)',xc='rgba(0,0,0,1)',x32='400px';var g16='btnSugestoes.svg',g15='btnActividade.svg',g7='logoCMP2.svg',g28='bgIndex.svg',g6='LogoAmbiente.svg',g18='btnContactos.svg',g19='btnJogo.svg',g17='btnDias.svg',g14='btnEducacao.svg';var s8="Design: Atelier João Borges . Developed: GatoSerio.com";var im='images/',aud='media/',vid='media/',js='js/',fonts={'Locator, Geneva, Verdana, sans-serif':'<link rel=\"stylesheet\" type=\"text/css\" href=\"fonts/Locator-Regular/font.css\">'},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=["edge_includes/jquery-2.1.1.min.js","edge_includes/EdgeCommons.js"],symbols={"stage":{v:x1,mv:x2,b:x3,stf:x4,cg:x4,rI:n,cn:{dom:[{id:'content',symbolName:'content',t:m,r:['0px','0px','900px','600px','auto','auto']},{id:'LogoAmbiente',t:g,r:['112px','50px','315px','47px','auto','auto'],f:[x5,im+g6,'0px','0px']},{id:'logoCMP2',t:g,r:['694px','50px','92px','47px','auto','auto'],f:[x5,im+g7,'0px','0px']},{id:'Copy',t:x,tag:'p',r:['110px','573px','auto','auto','auto','auto'],text:s8,n:[x10,[x9,p],"rgba(111,109,108,1.00)",l,i,"",x11,x12]},{id:'barraTranparenteMenu',t:m,r:['110px','173px','676px','47px','auto','auto'],f:[x13],s:[0,xc,i]},{id:'btnEducacao',t:g,r:['319px','122px','79px','88px','auto','auto'],cl:'rect(0px 79px 88px 16.45703125px)',cu:'pointer',f:[x5,im+g14,'0px','0px']},{id:'btnActividade',t:g,r:['411px','122px','74px','90px','auto','auto'],cl:'rect(0px 74px 90px 11.99609375px)',cu:'pointer',f:[x5,im+g15,'0px','0px']},{id:'btnSugestoes',t:g,r:['496px','122px','76px','90px','auto','auto'],cl:'rect(0px 76px 90px 13.955078125px)',cu:'pointer',f:[x5,im+g16,'0px','0px']},{id:'btnDias',t:g,r:['588px','119px','74px','91px','auto','auto'],cl:'rect(3.0654296875px 74.4755859375px 91px 0.34130859375px)',cu:'pointer',f:[x5,im+g17,'0px','0px']},{id:'btnContactos',t:g,r:['675px','122px','69px','88px','auto','auto'],cl:'rect(0px 69px 88px 6.5322265625px)',cu:'pointer',f:[x5,im+g18,'0px','0px']},{id:'btnJogo',t:g,r:['754px','122px','79px','77px','auto','auto'],cl:'rect(0px 79px 77px 16.6943359375px)',cu:'pointer',f:[x5,im+g19,'0px','0px']},{id:'fader',t:m,r:['1px','0px','900px','600px','auto','auto'],f:[x20],s:[0,"rgb(0, 0, 0)",i]}],style:{'${Stage}':{isStage:true,r:['null','null','900px','600px','auto','auto'],overflow:'hidden',f:[x21]}}},tt:{d:0,a:y,data:[]}},"content":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:y,cn:{dom:[{t:g,id:x22,r:[x23,x24,x25,x26,x27,x27],f:[x5,im+g28,x29,x29]}],style:{'${symbolSelector}':{r:[_,_,x30,x31]}}},tt:{d:0,a:y,data:[]}},"fadeIn":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{t:m,r:[x29,x29,x30,x32,x27,x27],v:b,id:x33,o:x34,s:[0,x35,i],f:[x20]}],style:{'${symbolSelector}':{r:[_,_,x30,x32]}}},tt:{d:500,a:y,data:[["eid12",d,0,0,"easeInOutQuad",e36,b,b],["eid13",d,500,0,"easeInOutQuad",e36,b,i],["eid11",o,0,500,"easeInOutQuad",e36,'1','0']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("CMPAGENDA");
 (function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
 //Edge symbol: 'stage'
-(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${btnEducacao}","click",function(sym,e){var content=EC.loadComposition("educacao.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${btnEducacao}","click",function(sym,e){var content=EC.loadComposition("educacao.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
 Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){yepnope({load:["css/style.css"],complete:function(){EC.debug("edge common loaded","edgetools")}});sym.$('fader').hide();sym.$('fader').fadeOut(2000,function(){sym.$('fader').hide();});$('\
+          <div id="frameBar">\
+                 <div id="close"></div>\
+                 <div id="minimize"></div>\
+             </div>\
+             <style>\
+            #frameBar{\
+            z-index: 1000;\
+            position: fixed;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 22px;\
+            -webkit-user-select: none;\
+            -webkit-app-region: drag;\
+            cursor: move;\
+          }\
+          #frameBar:hover{\
+            background: rgba(5,5,5,0.1);\
+          }\
+          #close{\
+            width: 12px;\
+            height: 12px;\
+            border-radius: 10px;\
+            position: fixed;\
+            left: 5px;\
+            top: 5px;\
+            background: red;\
+            cursor: pointer;\
+          }\
+          #minimize{\
+            width: 12px;\
+            height: 12px;\
+            border-radius: 10px;\
+            position: fixed;\
+            left: 22px;\
+            top: 5px;\
+            background: green;\
+            cursor: pointer;\
+          }\
+             </style>').prependTo("body");var gui=require('nw.gui');var win=gui.Window.get();$('#close').click(function(e){win.close();});$('#minimize').click(function(e){win.minimize();});$('\
          <style scoped contenteditable="">\
           ::-webkit-scrollbar {\
               width: 5px;\
@@ -32,15 +73,20 @@ Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){yep
           </style>\
          ').appendTo("head");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${btnJogo}","click",function(sym,e){var content=EC.loadComposition("jogo.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+Symbol.bindElementAction(compId,symbolName,"${btnJogo}","click",function(sym,e){var content=EC.loadComposition("jogo.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${btnContactos}","click",function(sym,e){var content=EC.loadComposition("contactos.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+Symbol.bindElementAction(compId,symbolName,"${btnContactos}","click",function(sym,e){var content=EC.loadComposition("contactos.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${btnDias}","click",function(sym,e){var content=EC.loadComposition("dias.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+Symbol.bindElementAction(compId,symbolName,"${btnDias}","click",function(sym,e){var content=EC.loadComposition("dias.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${btnSugestoes}","click",function(sym,e){var content=EC.loadComposition("sugestoes.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+Symbol.bindElementAction(compId,symbolName,"${btnSugestoes}","click",function(sym,e){var content=EC.loadComposition("sugestoes.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${btnActividade}","click",function(sym,e){var content=EC.loadComposition("actividade.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();});});
+Symbol.bindElementAction(compId,symbolName,"${btnActividade}","click",function(sym,e){var content=EC.loadComposition("actividade.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
+return false;});});});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
