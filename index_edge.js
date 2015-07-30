@@ -5,47 +5,8 @@
 (function(symbolName){Symbol.bindElementAction(compId,symbolName,"${btnEducacao}","click",function(sym,e){var content=EC.loadComposition("educacao.html",sym.getSymbol("content"));content.done(function(comp){var stage=comp.getStage();$('iframe').contents().find('a').click(function(event){event.preventDefault();var gui=require('nw.gui');gui.Shell.openExternal($(this).attr('href'))
 return false;});});});
 //Edge binding end
-Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){yepnope({load:["css/style.css"],complete:function(){EC.debug("edge common loaded","edgetools")}});sym.$('fader').hide();sym.$('fader').fadeOut(2000,function(){sym.$('fader').hide();});$('\
-          <div id="frameBar">\
-                 <div id="close"></div>\
-                 <div id="minimize"></div>\
-             </div>\
-             <style>\
-            #frameBar{\
-            z-index: 1000;\
-            position: fixed;\
-            top: 0;\
-            left: 0;\
-            width: 100%;\
-            height: 22px;\
-            -webkit-user-select: none;\
-            -webkit-app-region: drag;\
-            cursor: move;\
-          }\
-          #frameBar:hover{\
-            background: rgba(5,5,5,0.1);\
-          }\
-          #close{\
-            width: 12px;\
-            height: 12px;\
-            border-radius: 10px;\
-            position: fixed;\
-            left: 5px;\
-            top: 5px;\
-            background: red;\
-            cursor: pointer;\
-          }\
-          #minimize{\
-            width: 12px;\
-            height: 12px;\
-            border-radius: 10px;\
-            position: fixed;\
-            left: 22px;\
-            top: 5px;\
-            background: green;\
-            cursor: pointer;\
-          }\
-             </style>').prependTo("body");var gui=require('nw.gui');var win=gui.Window.get();$('#close').click(function(e){win.close();});$('#minimize').click(function(e){win.minimize();});$('\
+Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){yepnope({load:["css/style.css"],complete:function(){EC.debug("edge common loaded","edgetools")}});sym.$('fader').hide();sym.$('fader').fadeOut(2000,function(){sym.$('fader').hide();});
+var gui=require('nw.gui');var win=gui.Window.get();$('#close').click(function(e){win.close();});$('#minimize').click(function(e){win.minimize();});$('\
          <style scoped contenteditable="">\
           ::-webkit-scrollbar {\
               width: 5px;\
