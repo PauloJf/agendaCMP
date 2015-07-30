@@ -16,7 +16,7 @@ function handleExternalURLs() {
     if (device.platform.toUpperCase() === 'ANDROID') {
         $('a').on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
-            alert($(this).attr('href'));
+            //alert($(this).attr('href'));
             navigator.app.loadUrl(url, { openExternal: true });
             e.preventDefault();
         });
