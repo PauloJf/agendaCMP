@@ -17,7 +17,7 @@
     </feature>
     <gap:splash src="splash.png" />
     <gap:config-file platform="android" parent="/manifest">
-        <application android:debuggable="true" />
+        <application android:debuggable="false" />
     </gap:config-file>
     <icon src="icon.png" />
     <preference name="orientation" value="landscape" />
