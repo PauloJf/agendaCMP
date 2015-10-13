@@ -8,7 +8,7 @@
         GatoSerio, Multimedia developers
     </author>
     <content src="index.html" />
-    <gap:plugin name="cordova-plugin-inappbrowser" source="pgb" version="0.5.2" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source=“nam”/>
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
