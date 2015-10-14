@@ -1,4 +1,3 @@
-alert('phonegap.js');
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
@@ -41,7 +40,7 @@ function handleExternalURLs() {
 function initPushwoosh()
 {
     var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
- 
+    alert('pushwoosh');
     //set push notifications handler
     document.addEventListener('push-notification', function(event) {
         var title = event.notification.title;
