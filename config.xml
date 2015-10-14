@@ -11,6 +11,7 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" source='npm' />
     
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+    <access origin="*.pushwoosh.com"/>
     
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
