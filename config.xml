@@ -10,7 +10,7 @@
     <content src="index.html" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source='npm' />
     
-    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" />
     <access origin="*.pushwoosh.com"/>
     
     <feature name="InAppBrowser">
