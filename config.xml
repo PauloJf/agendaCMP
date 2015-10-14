@@ -9,6 +9,8 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source='npm' />
+    <gap:plugin name="com.phonegap.plugins.puship" source="plugins.cordova.io" />
+    
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
