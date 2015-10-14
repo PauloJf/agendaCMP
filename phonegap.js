@@ -1,7 +1,5 @@
+alert('phonegap.js');
 document.addEventListener('deviceready', onDeviceReady, false);
-
-
-
 
 function onDeviceReady() {
 
