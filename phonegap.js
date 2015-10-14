@@ -37,8 +37,7 @@ function handleExternalURLs() {
 }
 
 
-function initPushwoosh()
-{
+function initPushwoosh(){
     var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
     alert('pushwoosh');
     //set push notifications handler
@@ -54,7 +53,7 @@ function initPushwoosh()
     });
  
     //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-    pushNotification.onDeviceReady({ projectid: "AIzaSyBohYnARl8OEMGEWW8DdyvEaUXerzSVUB8", pw_appid : "8BF22-5CE01" });
+    pushNotification.onDeviceReady({ projectid: "802197003667", pw_appid : "8BF22-5CE01" });
  
     //register for pushes
     pushNotification.registerDevice(
