@@ -38,15 +38,15 @@ sym.$('familiaText').html('<strong>Ambiente em Familia</strong> <p>A partir de j
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${cmpLinkBtn}","click",function(sym,e){window.open("http://www.cm-porto.pt","_blank");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy}","click",function(sym,e){navigator.app.loadUrl('https://cm-porto.pt/',{openExternal:true});});
+Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy}","click",function(sym,e){window.open('https://cm-porto.pt/','_system');});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${linkCMP}","click",function(sym,e){navigator.app.loadUrl('https://cm-porto.pt/',{openExternal:true});});
+Symbol.bindElementAction(compId,symbolName,"${linkCMP}","click",function(sym,e){window.open('https://cm-porto.pt/','_system');});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy3}","click",function(sym,e){navigator.app.loadUrl('https://cm-porto.pt/',{openExternal:true});});
+Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy3}","click",function(sym,e){window.open('https://cm-porto.pt/','_system');});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy2}","click",function(sym,e){navigator.app.loadUrl('https://cm-porto.pt/',{openExternal:true});});
+Symbol.bindElementAction(compId,symbolName,"${linkCMPCopy2}","click",function(sym,e){window.open('https://cm-porto.pt/','_system');});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${linkEmail}","click",function(sym,e){navigator.app.loadUrl('mailto:dm.gestaoambiental@cm-porto.pt',{openExternal:true});});
+Symbol.bindElementAction(compId,symbolName,"${linkEmail}","click",function(sym,e){window.open('mailto:dm.gestaoambiental@cm-porto.pt','_system');});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
