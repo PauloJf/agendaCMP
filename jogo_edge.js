@@ -5,16 +5,16 @@
 (function(symbolName){Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){var mouseEventTypes={touchstart:"mousedown",touchmove:"mousemove",touchend:"mouseup"};for(originalType in mouseEventTypes){document.addEventListener(originalType,function(originalEvent){if(originalEvent.type=='click')
 return;if(originalEvent.type!='touchstart'&&originalEvent.type!='touchend'){originalEvent.preventDefault();}
 event=document.createEvent("MouseEvents");touch=originalEvent.changedTouches[0];event.initMouseEvent(mouseEventTypes[originalEvent.type],true,true,window,0,touch.screenX,touch.screenY,touch.clientX,touch.clientY,touch.ctrlKey,touch.altKey,touch.shiftKey,touch.metaKey,0,null);originalEvent.target.dispatchEvent(event);event.preventDefault();});}
-var pontos=10;sym.$("lixo").draggable();sym.$("bidaoPapel").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
-if(sym.getSymbol($(ui.draggable)).getPosition()==3){pontos++
+var pontos=10;sym.$("pontosTxt").html(pontos);sym.$("lixo").draggable();sym.$("bidaoPapel").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
+if(sym.getSymbol($(ui.draggable)).getPosition()==3000){pontos++
 $(ui.draggable).fadeOut();}else{pontos--
 $(ui.draggable).fadeOut();}
 sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',250);$(ui.draggable).css('top',450);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')}}});sym.$("bidaoEmbalagens").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
-if(sym.getSymbol($(ui.draggable)).getPosition()==2){pontos++
+if(sym.getSymbol($(ui.draggable)).getPosition()==2000){pontos++
 $(ui.draggable).fadeOut();}else{pontos--
 $(ui.draggable).fadeOut();}
 sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',250);$(ui.draggable).css('top',450);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')}}});sym.$("bidaoVidro").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
-if(sym.getSymbol($(ui.draggable)).getPosition()==1){pontos++
+if(sym.getSymbol($(ui.draggable)).getPosition()==1000){pontos++
 $(ui.draggable).fadeOut();}else{pontos--
 $(ui.draggable).fadeOut();}
 sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',250);$(ui.draggable).css('top',450);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')}}});sym.$("bidaoOleo").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
