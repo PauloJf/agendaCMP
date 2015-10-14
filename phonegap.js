@@ -12,7 +12,7 @@ function onDeviceReady() {
     
     initPushwoosh();
 }
-
+initPushwoosh();
 function handleExternalURLs() {
     // Handle click events for all external URLs
     alert(device.platform.toUpperCase());
