@@ -1,54 +1,1 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.gatoserio.agendacmp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Agenda Ambiental CMP</name>
-    <description>
-        Agenda Ambiental CMP
-    </description>
-    <author email="support@gatoserio.com" href="http://gatoserio.com">
-        GatoSerio, Multimedia developers
-    </author>
-    <content src="index.html" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" source='npm' />
-    
-    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" />
-    <access origin="*.pushwoosh.com"/>
-    
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <gap:splash src="splash.png" />
-    <gap:config-file platform="android" parent="/manifest">
-        <application android:debuggable="false" />
-    </gap:config-file>
-    <icon src="icon.png" />
-    <preference name="orientation" value="landscape" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
-    <access origin="*" />
-    <plugin name="cordova-plugin-whitelist" version="1" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="mailto:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
-    <engine name="android" spec="^4.0.2" />
-</widget>
+<?xml version="1.0" encoding="UTF-8"?>	<widget xmlns = "http://www.w3.org/ns/widgets"		xmlns:gap = "http://phonegap.com/ns/1.0"		id        = "com.gatoserio.agendaambiente"		versionCode="0.51"		version   = "0.1">		<name>Agenda Ambiental 2015/2016</name>		<description>		</description>		<author href="http://gatoserio.com" email="support@gatoserio.com">GatoSerio, Multimedia developers		</author>		<preference name="phonegap-version" value="cli-5.2.0" />		<preference name="orientation" value="landscape" />		<preference name="fullscreen" value="false" />		<preference name="target-device" value="universal" />		<preference name="webviewbounce" value="true" />		<preference name="prerendered-icon" value="true" />		<preference name="stay-in-webview" value="true" />		<preference name="ios-statusbarstyle" value="default" />		<preference name="detect-data-types" value="true" />		<preference name="exit-on-suspend" value="false" />		<preference name="show-splash-screen-spinner" value="true" />		<preference name="auto-hide-splash-screen" value="true" />		<preference name="EnableViewportScale" value="false" />		<preference name="MediaPlaybackRequiresUserAction" value="false" />		<preference name="AllowInlineMediaPlayback" value="false" />		<preference name="BackupWebStorage" value="none" />		<preference name="TopActivityIndicator" value="gray" />		<preference name="KeyboardDisplayRequiresUserAction" value="false" />		<preference name="HideKeyboardFormAccessoryBar" value="false" />		<preference name="SuppressesIncrementalRendering" value="false" />		<preference name="android-minSdkVersion" value="7" />		<preference name="android-installLocation" value="auto" />		<preference name="SplashScreenDelay" value="5000" />		<preference name="ErrorUrl" value=""/>		<preference name="BackgroundColor" value="0x000000"/>		<preference name="KeepRunning" value="false"/>		<preference name="DisallowOverscroll" value="true"/>		<preference name="LoadingDialog" value=","/> 		<preference name="LoadUrlTimeoutValue" value="20000" />		<preference name="disable-cursor" value="false" />		<gap:platform name="ios" />		<gap:platform name="android" />		<feature name="http://api.phonegap.com/1.0/network"/>		<feature name="http://api.phonegap.com/1.0/notification"/>		<gap:plugin name="org.apache.cordova.console"  />		<gap:plugin name="org.apache.cordova.device"  />		<gap:plugin name="org.apache.cordova.dialogs"  />		<gap:plugin name="org.apache.cordova.inappbrowser"  />		<gap:plugin name="org.apache.cordova.network-information"  />		<gap:plugin name="org.apache.cordova.splashscreen"  />		<icon src="icon.png" gap:platform="ios" width="57" height="57" />		<icon src="icon.png" gap:platform="ios" width="72" height="72" />		<icon src="icon.png" gap:platform="ios" width="114" height="114" />		<icon src="icon.png" gap:platform="ios" width="144" height="144" />		<icon src="icon.png" gap:platform="ios" width="76" height="76" />		<icon src="icon.png" gap:platform="ios" width="120" height="120" />		<icon src="icon.png" gap:platform="ios" width="152" height="152" />		<icon src="icon.png" gap:platform="android" gap:density="ldpi" />		<icon src="icon.png" gap:platform="android" gap:density="mdpi" />		<icon src="icon.png" gap:platform="android" gap:density="hdpi" />		<icon src="icon.png" gap:platform="android" gap:density="xhdpi" />		<icon src="icon.png" gap:platform="android" gap:density="xxhdpi" />		<icon src="icon.png" gap:platform="android" gap:density="xxxhdpi" />		<icon src="icon.png" />		<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />		<gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />		<gap:splash src="splash.png" gap:platform="ios" width="768" height="1024 " />		<gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />		<gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />		<gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />		<gap:splash src="splash.png" gap:platform="android" gap:density="hdpi" />		<gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />		<gap:splash src="splash.png" gap:platform="android" gap:density="xxhdpi" />		<gap:splash src="splash.png" />		<access origin="pushwoosh.com" subdomains="true"  />		<gap:plugin name="com.phonegap.plugins.pushplugin" />		<gap:plugin name="com.pushwoosh.plugins.pushwoosh" />	</widget>
