@@ -22,38 +22,29 @@ function initPushwoosh() {
 	if(device.platform == "Android")
 	{
 		registerPushwooshAndroid();
-	}
-
-	if(device.platform == "iPhone" || device.platform == "iOS")
-	{
-		registerPushwooshIOS();
-	}
-
-	if (device.platform == "Win32NT") {
-	    registerPushwooshWP();
-	}
-}
-function handleExternalURLs() {
-    // Handle click events for all external URLs
-    alert(device.platform.toUpperCase());
-    if (device.platform.toUpperCase() === 'ANDROID') {
+        
         $('a').on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
             //alert($(this).attr('href'));
             navigator.app.loadUrl(url, { openExternal: true });
             e.preventDefault();
         });
-    }
-    else if (device.platform.toUpperCase() === 'IOS') {
+	}
+
+	if(device.platform == "iPhone" || device.platform == "iOS")
+	{
+		registerPushwooshIOS();
+        
         $('a').on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
             window.open(url, '_system');
             e.preventDefault();
         });
-    }
-    else {
-        // Leave standard behaviour
-    }
+	}
+
+	if (device.platform == "Win32NT") {
+	    registerPushwooshWP();
+	}
 }
 
 var app = {
@@ -73,8 +64,9 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        handleExternalURLs()
         initPushwoosh();
+        
+        handleExternalURLs()
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
