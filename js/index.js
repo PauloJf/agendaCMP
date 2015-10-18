@@ -18,6 +18,7 @@
  */
 
 function initPushwoosh() {
+    alert('initpush');
 	var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 	if(device.platform == "Android")
 	{
@@ -65,8 +66,6 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         initPushwoosh();
-        
-        handleExternalURLs()
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
