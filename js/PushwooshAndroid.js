@@ -18,7 +18,7 @@
  */
 
 function registerPushwooshAndroid() {
-    alert('register push');
+    //alert('register push');
     var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
 
 	//set push notifications handler
@@ -34,7 +34,7 @@ function registerPushwooshAndroid() {
 			}
 
 			//and show alert
-			alert(title);
+			//alert(title);
 
 			//stopping geopushes
 			//pushNotification.stopGeoPushes();
@@ -48,13 +48,13 @@ function registerPushwooshAndroid() {
 	pushNotification.registerDevice(
 		function(token)
 		{
-			alert(token);
+			//alert(token);
 			//callback when pushwoosh is ready
 			onPushwooshAndroidInitialized(token);
 		},
 		function(status)
 		{
-			alert("failed to register: " +  status);
+			//alert("failed to register: " +  status);
 		    console.warn(JSON.stringify(['failed to register ', status]));
 		}
 	);
