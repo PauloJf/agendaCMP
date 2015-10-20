@@ -25,13 +25,13 @@ function registerPushwooshAndroid() {
 	document.addEventListener('push-notification',
 		function(event)
 		{
-            var title = event.notification.title;
-            var userData = event.notification.userdata;
+            //var title = event.notification.title;
+            //var userData = event.notification.userdata;
 
             //dump custom data to the console if it exists
-            if(typeof(userData) != "undefined") {
-				console.warn('user data: ' + JSON.stringify(userData));
-			}
+            //if(typeof(userData) != "undefined") {
+			//	console.warn('user data: ' + JSON.stringify(userData));
+			//}
 
 			//and show alert
 			//alert(title);
@@ -50,12 +50,12 @@ function registerPushwooshAndroid() {
 		{
 			//alert(token);
 			//callback when pushwoosh is ready
-			onPushwooshAndroidInitialized(token);
+			//onPushwooshAndroidInitialized(token);
 		},
 		function(status)
 		{
 			//alert("failed to register: " +  status);
-		    console.warn(JSON.stringify(['failed to register ', status]));
+		    //console.warn(JSON.stringify(['failed to register ', status]));
 		}
 	);
 }
