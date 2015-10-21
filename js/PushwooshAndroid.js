@@ -25,13 +25,13 @@ function registerPushwooshAndroid() {
 	document.addEventListener('push-notification',
 		function(event)
 		{
-            //var title = event.notification.title;
-            //var userData = event.notification.userdata;
+            var title = event.notification.title;
+            var userData = event.notification.userdata;
 
             //dump custom data to the console if it exists
-            //if(typeof(userData) != "undefined") {
-			//	console.warn('user data: ' + JSON.stringify(userData));
-			//}
+            if(typeof(userData) != "undefined") {
+				console.warn('user data: ' + JSON.stringify(userData));
+			}
 
 			//and show alert
 			//alert(title);
@@ -42,7 +42,7 @@ function registerPushwooshAndroid() {
 	);
 
 	//initialize Pushwoosh with projectid: "GOOGLE_PROJECT_ID", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-	pushNotification.onDeviceReady({ projectid: "802197003667", appid : "156CD-54311" });
+	pushNotification.onDeviceReady({ projectid: "802197003667", appid : "8BF22-5CE01" });
 
 	//register for push notifications
 	pushNotification.registerDevice(
@@ -50,12 +50,12 @@ function registerPushwooshAndroid() {
 		{
 			//alert(token);
 			//callback when pushwoosh is ready
-			//onPushwooshAndroidInitialized(token);
+			onPushwooshAndroidInitialized(token);
 		},
 		function(status)
 		{
 			//alert("failed to register: " +  status);
-		    //console.warn(JSON.stringify(['failed to register ', status]));
+		    console.warn(JSON.stringify(['failed to register ', status]));
 		}
 	);
 }
