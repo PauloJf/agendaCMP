@@ -61,14 +61,15 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     -->
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" source='npm' />
-    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" version="0.6.0" />
+    <gap:plugin name="org.apache.cordova.vibration" source="pgb" version="0.3.11" />
+
 
     <!-- Pushwoosh plugin -->
-    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" version="3.6.13"/>
     <!-- Local Notifications plugin -->
-    <gap:plugin name="cordova-plugin-local-notifications-mm" source='npm' />
+    <gap:plugin name="cordova-plugin-local-notifications" source='npm' />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
