@@ -133,7 +133,6 @@ function scheduleNotifications(){
     cordova.plugins.notification.local.schedule({
         id:1,
         title: 'Scheduled with delay',
-        text: 'Test Message 1',
-        at: moment().add(5,'seconds').toDate()
+        text: 'Test Message 1'
     });
 }
