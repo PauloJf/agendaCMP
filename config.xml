@@ -70,7 +70,7 @@
     <!-- Pushwoosh plugin -->
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" version="3.6.13"/>
     <!-- Local Notifications plugin -->
-    <gap:plugin name="cordova-plugin-local-notifications-nn" source='npm' />
+    <gap:plugin name="cordova-plugin-local-notifications-mm" source='npm' />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
