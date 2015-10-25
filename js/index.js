@@ -80,3 +80,25 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function scheduleNotifications(){
+    //moment('2015-09-12 17:30').toDate()
+
+    var sound = device.platform == 'Android' ? 'file://sound.mp3' : 'file://beep.caf';
+
+    cordova.plugins.notification.local.schedule([{
+        id:1,
+        title: 'Scheduled with delay',
+        text: 'Test Message 1',
+        at: moment().add(5,'seconds').toDate(),
+        sound: sound,
+        badge: 12
+    }, {
+        id:2,
+        title: 'Scheduled with delay',
+        text: 'Test Message 2',
+        at: moment().add(10,'seconds').toDate(),
+        sound: sound,
+        badge: 12
+    }]);
+}
