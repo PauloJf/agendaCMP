@@ -109,13 +109,7 @@ var app = {
             // showToast('cleared all');
         });
         
-        console.log('notify');
-        cordova.plugins.notification.local.schedule({
-            id: 1,
-            text: 'Test Message 1',
-            icon: 'http://www.optimizeordie.de/wp-content/plugins/social-media-widget/images/default/64/googleplus.png',
-            sound: null
-        });
+        scheduleNotifications()
         
         app.receivedEvent('deviceready');
     },
@@ -135,10 +129,14 @@ var app = {
 function scheduleNotifications(){
     //moment('2015-09-12 17:30').toDate()
     
+    cordova.plugins.notification.local.hasPermission(function (granted) {
+        console.log('Permission has been granted: ' + granted);
+    });
+    
     cordova.plugins.notification.local.schedule({
         id: 1,
         text: 'Test Message 1',
-        icon: 'http://www.optimizeordie.de/wp-content/plugins/social-media-widget/images/default/64/googleplus.png',
+        at: moment().add(5, 'seconds').toDate(),
         sound: null
     });
 }
