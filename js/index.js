@@ -67,7 +67,6 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         initPushwoosh();
-        scheduleNotifications();
         
         cordova.plugins.notification.local.on('schedule', function (notification) {
             console.log('onschedule', arguments);
@@ -81,7 +80,6 @@ var app = {
 
         cordova.plugins.notification.local.on('trigger', function (notification) {
             console.log('ontrigger', arguments);
-            showToast('triggered: ' + notification.id);
         });
 
         cordova.plugins.notification.local.on('click', function (notification) {
@@ -111,6 +109,14 @@ var app = {
             // showToast('cleared all');
         });
         
+        console.log('notify');
+        cordova.plugins.notification.local.schedule({
+            id: 1,
+            text: 'Test Message 1',
+            icon: 'http://www.optimizeordie.de/wp-content/plugins/social-media-widget/images/default/64/googleplus.png',
+            sound: null,
+            data: { test: id }
+        });
         
         app.receivedEvent('deviceready');
     },
@@ -129,10 +135,12 @@ var app = {
 
 function scheduleNotifications(){
     //moment('2015-09-12 17:30').toDate()
-
+    
     cordova.plugins.notification.local.schedule({
-        id:1,
-        title: 'Scheduled with delay',
-        text: 'Test Message 1'
+        id: 1,
+        text: 'Test Message 1',
+        icon: 'http://www.optimizeordie.de/wp-content/plugins/social-media-widget/images/default/64/googleplus.png',
+        sound: null,
+        data: { test: id }
     });
 }
