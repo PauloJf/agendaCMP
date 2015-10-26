@@ -114,8 +114,7 @@ var app = {
             id: 1,
             text: 'Test Message 1',
             icon: 'http://www.optimizeordie.de/wp-content/plugins/social-media-widget/images/default/64/googleplus.png',
-            sound: null,
-            data: { test: id }
+            sound: null
         });
         
         app.receivedEvent('deviceready');
