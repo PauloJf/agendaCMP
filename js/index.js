@@ -404,8 +404,7 @@ function scheduleNotifications(){
     }, {
         id: 45,
         title: titleApp,
-        text: 'Solstício de Verão. Hoje é o dia mais longo do ano
-',
+        text: 'Solstício de Verão. Hoje é o dia mais longo do ano',
         at: moment('2016-06-21 '+hour).toDate(),
         data: {'url':'http://pt.wikipedia.org/wiki/Solst%C3%ADcio '}
     }, {
