@@ -6,28 +6,24 @@
 return;if(originalEvent.type!='touchstart'&&originalEvent.type!='touchend'){originalEvent.preventDefault();}
 event=document.createEvent("MouseEvents");touch=originalEvent.changedTouches[0];event.initMouseEvent(mouseEventTypes[originalEvent.type],true,true,window,0,touch.screenX,touch.screenY,touch.clientX,touch.clientY,touch.ctrlKey,touch.altKey,touch.shiftKey,touch.metaKey,0,null);originalEvent.target.dispatchEvent(event);event.preventDefault();});}
 pontos=10;dif=3000;sym.$("gameover").hide();sym.$("pontosTxt").html(pontos);sym.$("lixo").draggable({start:function(event,ui){sym.$("lixo").stop(true);},stop:function(event,ui){sym.$("lixo").stop(true);sym.$("lixo").animate({left:96,top:177},250,function(){dif*=0.9;sym.dropLixo()});}});sym.dropLixo=function(){sym.$("lixo").animate({top:432},dif,function(){dif=Math.max(dif*0.9,100);pontos--
-sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);sym.$('lixo').css({'left':96,'top':177});sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over');sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}else{sym.$("error")[0].play();sym.dropLixo()}});}
+sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);sym.$('lixo').css({'left':96,'top':177});sym.$("pontosTxt").html(pontos);if(pontos==0){sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}else{sym.$("error")[0].play();sym.dropLixo()}});}
 sym.dropLixo();sym.$("bidaoPapel").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
 if(sym.getSymbol($(ui.draggable)).getPosition()==3000){pontos++
 sym.$("trash")[0].play();$(ui.draggable).fadeOut();}else{pontos--
 sym.$("error")[0].play();$(ui.draggable).fadeOut();}
-sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')
-sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoEmbalagens").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
+sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoEmbalagens").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
 if(sym.getSymbol($(ui.draggable)).getPosition()==2000){pontos++
 sym.$("trash")[0].play();$(ui.draggable).fadeOut();}else{pontos--
 sym.$("error")[0].play();$(ui.draggable).fadeOut();}
-sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')
-sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoVidro").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
+sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoVidro").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
 if(sym.getSymbol($(ui.draggable)).getPosition()==1000){pontos++
 sym.$("trash")[0].play();$(ui.draggable).fadeOut();}else{pontos--
 sym.$("error")[0].play();$(ui.draggable).fadeOut();}
-sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')
-sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoOleo").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
+sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});sym.$("bidaoOleo").droppable({drop:function(event,ui){nome=$(ui.draggable).attr('id').split("_")[$(ui.draggable).attr('id').split("_").length-1]
 if(sym.getSymbol($(ui.draggable)).getPosition()==0){pontos++
 sym.$("trash")[0].play();$(ui.draggable).fadeOut();}else{pontos--
 sym.$("error")[0].play();$(ui.draggable).fadeOut();}
-sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){alert('Gamo Over')
-sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});function getRandomInt(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
+sym.getSymbol("lixo").stop(getRandomInt(0,3)*1000);$(ui.draggable).css('left',96);$(ui.draggable).css('top',177);$(ui.draggable).fadeIn();sym.$("pontosTxt").html(pontos);if(pontos==0){sym.$("gameover").show();sym.$("gameover2")[0].play();sym.$('lixo').draggable("destroy");}}});function getRandomInt(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
 var gui=require('nw.gui');$(document).on('click','a',function(event){event.preventDefault();window.open($(this).attr('href'),'_system');return false;});sym.$('fader').fadeOut(function(){sym.$('fader').hide();});});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${gameover}","click",function(sym,e){pontos=10;dif=3000;sym.dropLixo()
