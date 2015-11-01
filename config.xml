@@ -44,7 +44,7 @@
     <gap:config-file platform="android" parent="/manifest" mode="merge">
     <supports-screens android:smallScreens="false" />
     </gap:config-file>
-    <!-- <gap:platform name="ios" /> -->
+    <gap:platform name="ios" />
     
     <!-- Plugins -->
 
