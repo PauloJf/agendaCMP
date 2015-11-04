@@ -78,7 +78,7 @@
     <!-- Local Notifications plugin ANDROID
     <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />-->
     <!-- Local Notifications plugin iOS -->
-    <gap:plugin name="cordova-plugin-local-notifications" source="npm" />
+    <gap:plugin name="cordova-plugin-local-notifications-nn" source="npm" />
 
     
     <!-- Define app icon for each platform. -->
