@@ -16,13 +16,13 @@
     <author email="support@gatoserio.com" href="http://gatoserio.com">
         GatoSerio, Multimedia developers
     </author>
-    
+
     <!--
     <gap:config-file platform="android" parent="/manifest">
         <application android:debuggable="true" />
     </gap:config-file>
     -->
-    
+
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="cli-5.2.0" />      <!-- all: current version of PhoneGap (3.0.0, 3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.3, 3.7.0, cli-5.1.1, cli-5.2.0) -->
     <preference name="orientation"                value="landscape" />      <!-- all: default means both landscape and portrait are enabled -->
@@ -40,18 +40,18 @@
     <preference name="android-minSdkVersion"      value="11" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--<preference name="android-build-tool"         value="gradle" /> -->
-    
+
     <gap:platform name="android" />
     <gap:config-file platform="android" parent="/manifest" mode="merge">
         <supports-screens android:smallScreens="false" />
     </gap:config-file>
-    
+
     <gap:platform name="ios" />
-    
+
     <!-- Plugins -->
 
     <!-- Core plugins -->
-    <!-- Disabled plugins 
+    <!-- Disabled plugins
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -75,12 +75,12 @@
 
     <!-- Pushwoosh plugin -->
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" version="3.6.13"/>
-    <!-- Local Notifications plugin ANDROID
-    <gap:plugin name="cordova-plugin-local-notifications-nn" source="npm" />-->
-    <!-- Local Notifications plugin iOS -->
-    <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />
+    <!-- Local Notifications plugin ANDROID-->
+    <gap:plugin name="cordova-plugin-local-notifications-nn" source="npm" />
+    <!-- Local Notifications plugin iOS
+    <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />-->
 
-    
+
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
@@ -110,11 +110,11 @@
     <gap:splash src="res/screen/ios/screen-Landscape-736h@3x.png"  gap:platform="ios" width="2208" height="1242" />
     <!-- iPad -->
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" /> 
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <!-- Retina iPad -->
     <gap:splash src="res/screen/ios/screen-ipad-portrait@2x.png"   gap:platform="ios"     width="1536" height="2048" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape@2x.png"  gap:platform="ios"     width="2048" height="1536" />
-       
+
     <!--
         Define access to external domains.
 
