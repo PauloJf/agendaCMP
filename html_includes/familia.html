@@ -5,3 +5,18 @@
 <p>Para mais informações sobre o programa e inscrição, consultar o sítio da CMP em 
     <a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');">www.cm-porto.pt</a>ou através dos contactos da Divisão de Gestão Ambiental: tel: <a href="tel:228349490">22 834 94 90</a> | 
     <a href="mailto:dm.gestaoambiental@cm-porto.pt">dm.gestaoambiental@cm-porto.pt</a></p>
+    <br>
+    <br>
+    <br>
+    <a href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a><br>
+    <a class="test" href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a><br>
+    <a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a><br>
+    <a href="#" onclick="cordova.InAppBrowser.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a><br>
+<script>
+    $(document).on('click', 'a.test', function (event) {
+        event.preventDefault();
+        //Phonegap
+        window.open($(this).attr('href'), '_system');
+        return false;
+    });
+</script>
