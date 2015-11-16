@@ -69,7 +69,7 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     -->
     <gap:plugin name="org.apache.cordova.device" source="pgb" version="0.2.12" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" version="0.6.0" />
+    <gap:plugin name="org.apache.cordova.inappbrowser"  />
     <gap:plugin name="org.apache.cordova.vibration" source="pgb" version="0.3.11" />
 
 
