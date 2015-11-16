@@ -2,14 +2,46 @@
 <p>A partir de janeiro 2015, os Centros de Educação Ambiental vão estar abertos no 1º e último sábado de cada mês, com atividades dirigidas às famílias. Nestes sábados de manhã, as famílias poderão realizar atividades experimentais, atividades de expressão plástica, saídas de campo, observações de fauna e flora e terão a oportunidade de ouvir diversos especialistas de várias áreas relacionadas com o ambiente.</p>
 <p align="right"><em>Atividades recomendadas a famílias (&gt; 4 anos); as crianças devem permanecer acompanhadas por um adulto durante toda a sessão.</em></p>
 
-<p>Para mais informações sobre o programa e inscrição, consultar o sítio da CMP em 
-    <a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');">www.cm-porto.pt</a>ou através dos contactos da Divisão de Gestão Ambiental: tel: <a href="tel:228349490">22 834 94 90</a> | 
+<p>Para mais informações sobre o programa e inscrição, consultar o sítio da CMP em
+    <a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');">www.cm-porto.pt</a>ou através dos contactos da Divisão de Gestão Ambiental: tel: <a href="tel:228349490">22 834 94 90</a> |
     <a href="mailto:dm.gestaoambiental@cm-porto.pt">dm.gestaoambiental@cm-porto.pt</a></p>
-    <br>
-    <br>
-    <br>
-    <a href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a><br><br>
-    <a class="test" href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a><br><br><br>
-    <a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a><br><br>
-    <a href="#" onclick="cordova.InAppBrowser.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a><br><br>
-    <a href="#" onclick="cordova.InAppBrowser.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a><br><br>
+<br>
+<br>
+<br>
+<a href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a>
+<br>
+<br>
+<a class="test" href="http://www.cm-porto.pt/educacao-ambiental">www.cm-porto.pt</a>
+<br>
+<br>
+<br>
+<a href="#" onclick="window.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a>
+<br>
+<br>
+<a href="#" onclick="cordova.InAppBrowser.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a>
+<br>
+<br>
+<a href="#" onclick="cordova.InAppBrowser.open('http://www.cm-porto.pt/educacao-ambiental', '_system');return false;">www.cm-porto.pt</a>
+<br>
+<br>
+
+<script type="text/javascript">
+    if (device.platform == "Android") {
+        $('a').on('click', 'a[href^="http"]', function (e) {
+            var url = $(this).attr('href');
+            alert($(this).attr('href'));
+            navigator.app.loadUrl(url, {
+                openExternal: true
+            });
+            e.preventDefault();
+        });
+    }
+
+    if (device.platform == "iPhone" || device.platform == "iOS") {
+        $('a').on('click', 'a[href^="http"]', function (e) {
+            var url = $(this).attr('href');
+            window.open(url, '_system');
+            e.preventDefault();
+        });
+    }
+</script>
